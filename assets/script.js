@@ -1,4 +1,5 @@
 var dogUrl = 'https://dog.ceo/api/breeds/image/random'
+var catUrl ='https://cataas.com/cat'
 var dogDisplay = $('#dogDisplay');
 var dogBtn = $('#dogBtn');
 var imgBoth = document.getElementsByTagName("img");
@@ -18,7 +19,7 @@ function dogApi() {
         .then(function (data) {
             var dogImg = document.createElement('img');
             dogImg.src = data.message;
-            dogDisplay.append(dogImg);
+            dogDisplay.prepend(dogImg);
             console.log(data.message);
         })
 
