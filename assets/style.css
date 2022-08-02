@@ -1,0 +1,10 @@
+header {
+text-align: center;
+padding: 50px;
+margin: 10px;
+border: 2px solid black;
+}
+
+#dogBtn{
+    width: 128px;
+}
