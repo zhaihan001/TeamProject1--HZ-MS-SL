@@ -100,3 +100,16 @@ $('.voteBtn').on('click', function (event) {
     dogApi();
     voteCount();
 })
+
+$('#resetBtn').on('click', function () {
+    localStorage.clear();
+    document.getElementById("dogScore").innerHTML = "";
+    document.getElementById("catScore").innerHTML = "";
+    messageEl.textContent = ""
+    dogVote = 0;
+    catVote = 0;
+    document.getElementById("dogProgress").value = dogVote;
+    document.getElementById("catProgress").value = catVote;
+    dogScore = 1;
+    catScore = 1;
+})
