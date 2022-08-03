@@ -9,8 +9,10 @@
 </head>
 
 <body>
-    <header class="title is-1">
-        <h1>Dog & Cat</h1>
+    <header>
+        <h1 class="title is-1">Paws Vs. Claws</h1>
+        <h2 class="subtitle">The world's oldest rivalry? Where do you stand?
+            Find out by voting for which you think is cuter!</h2>
     </header>
 
     <main>
@@ -25,22 +27,38 @@
             </div>
 
             <div id="catDisplay" class="column">
+
+
                 <br>
 
                 <button id="catBtn" class="voteBtn" data-vote="cat">👍</button>
             </div>
 
         </div>
+        <div class="columns">
+            <div class="column is-full">Voting results shown below</div>
+            <div id="voteInfo"></div>
+           
+          </div>
+
 
         <div class="columns">
 
             <div class="column is-three-fifths">
+                <h1>Voting Progress</h1>
                 <progress id="dogProgress" class="progress is-large is-danger" value="0" max="5"></progress>
                 <progress id="catProgress" class="progress is-large is-link" value="0" max="5"></progress>
             </div>
 
             <div class="column">
-                numeric results
+                <div>
+                    Scoreboard
+                </div>
+                <div> Dog | Cat </div>
+                <div>
+                    <p id="dogScore"></p>
+                    <p id="catScore"></p>
+                </div>
             </div>
 
         </div>
