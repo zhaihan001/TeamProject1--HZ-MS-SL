@@ -6,7 +6,6 @@ var catDisplay = $('#catDisplay');
 var catBtn = $('#catBtn');
 var imgBoth = document.getElementsByTagName("img");
 
-var voteInfo = $('#voteInfo');
 var dogVote = 0;
 var catVote = 0;
 var dogScore = 1;
@@ -49,17 +48,6 @@ function catApi() {
         })
 }
 
-
-function showInfo() {
-    var dogVote = 0;
-    var catVote = 0;
-    if (dogVote == 10) {
-        voteInfo.textContent = "Woof Woof! You must be a dog person!"
-    } else if (catVote == 10) {
-        voteInfo.textContent = "Meow! You must be a cat person!"
-    }
-}
-
 function voteCount() {
 
     var voteItem = event.target.dataset.vote;
@@ -80,10 +68,10 @@ function voteCount() {
     }
 
     if (dogVote == 2) {
-        messageEl.textContent = "Dog Person!"
+        messageEl.textContent = "Woof Woof! You must be a dog person!"
     }
     else if (catVote == 2) {
-        messageEl.textContent = "Cat Person!"
+        messageEl.textContent = "Meow! You must be a cat person!"
     }
 
     if (dogVote == 3 || catVote == 3) {
