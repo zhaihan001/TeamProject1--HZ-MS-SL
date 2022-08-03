@@ -9,6 +9,8 @@ var imgBoth = document.getElementsByTagName("img");
 var voteInfo = $('#voteInfo');
 var dogVote = 0;
 var catVote = 0;
+var dogScore = 1;
+var catScore = 1;
 var messageEl = document.getElementById("messageLine");
 
 
@@ -66,10 +68,15 @@ function voteCount() {
     if (voteItem == "dog") {
         dogVote++;
         document.getElementById("dogProgress").value = dogVote;
+        localStorage.setItem("dogScore",dogScore++);
+        document.getElementById("dogScore").innerHTML = localStorage.getItem("dogScore");
     }
     else {
         catVote++;
         document.getElementById("catProgress").value = catVote;
+        localStorage.setItem("catScore",catScore++);
+        document.getElementById("catScore").innerHTML = localStorage.getItem("catScore");
+
     }
 
     if (dogVote == 2) {
