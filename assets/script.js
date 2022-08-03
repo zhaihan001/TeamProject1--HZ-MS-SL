@@ -52,18 +52,13 @@ function showInfo() {
     var dogVote = 0;
     var catVote = 0;
     if (dogVote == 10) {
-voteInfo.textContent = "Woof Woof! You must be a dog person!"
+        voteInfo.textContent = "Woof Woof! You must be a dog person!"
     } else if (catVote == 10) {
-voteInfo.textContent = "Meow! You must be a cat person!"
+        voteInfo.textContent = "Meow! You must be a cat person!"
     }
+}
 
-    }
-
-
-$('.voteBtn').on('click', function(event){
-    console.log(event.target.dataset.vote);
-    
-function voteCount (){
+function voteCount() {
 
     var voteItem = event.target.dataset.vote;
     console.log(voteItem);
@@ -77,17 +72,17 @@ function voteCount (){
         document.getElementById("catProgress").value = catVote;
     }
 
-    if (dogVote == 2){
+    if (dogVote == 2) {
         messageEl.textContent = "Dog Person!"
     }
-    else if (catVote == 2){
+    else if (catVote == 2) {
         messageEl.textContent = "Cat Person!"
     }
 
-    if ( dogVote == 3 || catVote == 3){
+    if (dogVote == 3 || catVote == 3) {
         messageEl.textContent = ""
-        dogVote=0;
-        catVote=0;
+        dogVote = 0;
+        catVote = 0;
         document.getElementById("dogProgress").value = dogVote;
         document.getElementById("catProgress").value = catVote;
     }
