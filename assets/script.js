@@ -1,7 +1,9 @@
 var dogUrl = 'https://dog.ceo/api/breeds/image/random'
-var catUrl ='https://cataas.com/cat'
+var catUrl = 'https://api.thecatapi.com/v1/images/search?api_key="8e030fc9-e7ee-47ee-9687-d6df7bee3a67"'
 var dogDisplay = $('#dogDisplay');
 var dogBtn = $('#dogBtn');
+var catDisplay = $('#catDisplay');
+var catBtn = $('#catBtn');
 var imgBoth = document.getElementsByTagName("img");
 var dogVote = 0;
 
@@ -20,9 +22,28 @@ function dogApi() {
             var dogImg = document.createElement('img');
             dogImg.src = data.message;
             dogDisplay.prepend(dogImg);
+            console.log(data);
             console.log(data.message);
         })
-
 }
 
-dogBtn.on('click', dogApi);
+function catApi() {
+    clear();
+    fetch(catUrl)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            var catImg = document.createElement('img');
+            catImg.src = data[0].url;
+            catDisplay.prepend(catImg);
+            console.log(data);
+        })
+}
+
+$('.voteBtn').on('click', function(event){
+    console.log(event.target.dataset.vote);
+    
+    catApi();
+    dogApi();
+})
