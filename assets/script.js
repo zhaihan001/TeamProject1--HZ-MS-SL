@@ -5,6 +5,8 @@ var dogBtn = $('#dogBtn');
 var catDisplay = $('#catDisplay');
 var catBtn = $('#catBtn');
 var imgBoth = document.getElementsByTagName("img");
+
+var voteInfo = $('#voteInfo');
 var dogVote = 0;
 var catVote = 0;
 var messageEl = document.getElementById("messageLine");
@@ -45,6 +47,22 @@ function catApi() {
         })
 }
 
+
+function showInfo() {
+    var dogVote = 0;
+    var catVote = 0;
+    if (dogVote == 10) {
+voteInfo.textContent = "Woof Woof! You must be a dog person!"
+    } else if (catVote == 10) {
+voteInfo.textContent = "Meow! You must be a cat person!"
+    }
+
+    }
+
+
+$('.voteBtn').on('click', function(event){
+    console.log(event.target.dataset.vote);
+    
 function voteCount (){
 
     var voteItem = event.target.dataset.vote;
