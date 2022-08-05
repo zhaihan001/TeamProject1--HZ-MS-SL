@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Pets!</title>
 </head>
 
 <body>
     <header>
-        <h1 class="title is-1">Paws Vs. Claws</h1>
-        <h2 class="subtitle">The world's oldest rivalry? Where do you stand?
-            Find out by voting for which you think is cuter!</h2>
+        <section class="columns is-gapless" is-multiline>
+            <div class="column is-half has-background-danger"></div>
+            <div class="column is-half has-background-link">
+                <h1 class="title is-1 page-title">Paws vs Claws</h1>
+            </div>
+        </section>
+
+        <section class="columns is-gapless">
+            <h2 class="subtitle">The world's oldest rivalry? Where do you stand?
+                Find out by voting for which you think is cuter!</h2>
+        </section>
     </header>
 
     <main>
-
         <div class="columns">
-            <div id="dogDisplay" class="column">
+            <div id="dogDisplay" class="column has-background-danger">
                 <br>
-                <button id="dogBtn" class="voteBtn" data-vote="dog">👍</button>
-
+                <button id="dogBtn" data-vote="dog" class="voteBtn button">
+                    <span class="icon is-small">
+                        <i class="fas fa-thumbs-up"></i>
+                    </span>
+                </button>
             </div>
 
-            <div id="catDisplay" class="column">
+            <div id="catDisplay" class="column has-background-link">
                 <br>
-                <button id="catBtn" class="voteBtn" data-vote="cat">👍</button>
+                <button id="catBtn" class="voteBtn button" data-vote="cat">
+                    <span class="icon is-small">
+                        <i class="fas fa-thumbs-up"></i>
+                    </span>
+                </button>
             </div>
         </div>
 

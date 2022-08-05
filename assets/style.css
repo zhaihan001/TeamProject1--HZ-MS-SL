@@ -1,18 +1,24 @@
-body{
+body {
     text-align: center;
     margin: 0.5em;
-    
 }
 
-.column{
-    border:1px solid black;
+.column {
+    border: 1px solid black;
     margin: 3em;
-    
+    border-radius: 0%;
 }
 
-img {
-    height: 500px;
-    width: 500px;
-    border-radius: 10%;
+#catDisplay img,
+#dogDisplay img {
+    height: 300px;
+    border-radius: 2%;
 }
 
+.page-title {
+    margin-left: -100%;
+    color: white;
+    text-shadow: 3px 3px black;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
