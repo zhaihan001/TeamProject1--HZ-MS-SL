@@ -27,30 +27,25 @@
     <main>
         <div class="columns">
             <div id="dogDisplay" class="column has-background-danger">
+                <img id="dogImg">
                 <br>
-                <button id="dogBtn" data-vote="dog" class="voteBtn button">
-                    <span class="icon is-small">
-                        <i class="fas fa-thumbs-up"></i>
-                    </span>
+                <button id="dogBtn" data-vote="dog" class="voteBtn button fas fa-thumbs-up">
                 </button>
             </div>
 
             <div id="catDisplay" class="column has-background-link">
+                <img id="catImg">
                 <br>
-                <button id="catBtn" class="voteBtn button" data-vote="cat">
-                    <span class="icon is-small">
-                        <i class="fas fa-thumbs-up"></i>
-                    </span>
+                <button id="catBtn" class="voteBtn button fas fa-thumbs-up" data-vote="cat">
                 </button>
             </div>
         </div>
 
         <div class="columns">
-
             <div class="column is-three-fifths">
                 <h2 id="messageLine" class="title is-3"></h2>
-                <progress id="dogProgress" class="progress is-large is-danger" value=0 max=2></progress>
-                <progress id="catProgress" class="progress is-large is-link" value=0 max=2></progress>
+                <progress id="dogProgress" class="progress is-large is-danger" value=0 max=5></progress>
+                <progress id="catProgress" class="progress is-large is-link" value=0 max=5></progress>
             </div>
 
             <div class="column">

@@ -6,13 +6,14 @@ body {
 .column {
     border: 1px solid black;
     margin: 3em;
-    border-radius: 0%;
+    border-radius: 2.5%;
 }
 
 #catDisplay img,
 #dogDisplay img {
-    height: 300px;
-    border-radius: 2%;
+    height: 500px;
+    width: 600px;
+    border-radius: 25%;
 }
 
 .page-title {
@@ -22,3 +23,23 @@ body {
     padding-top: 5px;
     padding-bottom: 15px;
 }
+
+#dogProgress,
+#catProgress {
+    height: 50px;
+}
+
+.voteBtn{
+    font-size: 20px;
+}
+
+.voteBtn:hover {
+    background-color: darkgray;
+    font-size: 23px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* button > span > i {
+    pointer-events: none;
+} */
