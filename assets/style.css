@@ -1,18 +1,19 @@
 body {
     text-align: center;
-    margin: 0.5em;
+    padding: 0.5em;
+    margin:0.5em;
+    background-color: lightgray;
 }
 
 .column {
-    border: 1px solid black;
-    margin: 3em;
+    margin: 2em;
     border-radius: 2.5%;
 }
 
 #catDisplay img,
 #dogDisplay img {
-    height: 500px;
-    width: 600px;
+    height: 350px;
+    width: 400px;
     border-radius: 25%;
 }
 
@@ -26,7 +27,7 @@ body {
 
 #dogProgress,
 #catProgress {
-    height: 50px;
+    height: 40px;
 }
 
 .voteBtn{
@@ -34,12 +35,30 @@ body {
 }
 
 .voteBtn:hover {
-    background-color: darkgray;
+    background-color: yellow;
     font-size: 23px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-/* button > span > i {
-    pointer-events: none;
-} */
+#dogScore{
+    background-color: hsl(348, 100%, 61%);
+    color:white;
+}
+
+#catScore{
+    background-color: hsl(217, 71%, 53%);
+    color:white;
+}
+
+#resetBtn{
+    height: 50px;
+    width: 200px;
+    font-size: larger;
+}
+
+#resetBtn:hover {
+    background-color: yellow;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
