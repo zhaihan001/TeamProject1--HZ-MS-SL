@@ -36,7 +36,6 @@ body {
 
 .voteBtn:hover {
     background-color: yellow;
-    font-size: 23px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
