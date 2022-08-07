@@ -11,5 +11,6 @@ JavaScript
 JQuery
 3rd party API
 # Screenshot
+![image](https://user-images.githubusercontent.com/106831265/183315889-5b642d1c-9ac0-444e-9cf0-8d7e940cdb93.png)
 # Deployment link
 https://zhaihan001.github.io/TeamProject1--HZ-MS-SL/
